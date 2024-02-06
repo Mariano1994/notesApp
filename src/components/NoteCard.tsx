@@ -1,4 +1,5 @@
 import * as Dialog from "@radix-ui/react-dialog";
+import { formatDistanceToNow } from "date-fns";
 
 interface NoteCardPros {
   note: {
@@ -23,7 +24,9 @@ const NoteCard = ({ note }: NoteCardPros) => {
           <Dialog.Content className="fixed -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2  max-w-[640px] w-full h-[60vh] bg-slate-700 rounded-md flex flex-col outline-none">
             <div className="flex flex-1 flex-col gap-3 p-5 ">
               <span className="text-sm font-medium text-slate-300">
-                {note.date.toISOString()}
+                {formatDistanceToNow(note.date, {
+                  addSuffix: true,
+                })}
               </span>
               <p className="text-sm leading-6 text-slate-400">{note.content}</p>
             </div>
