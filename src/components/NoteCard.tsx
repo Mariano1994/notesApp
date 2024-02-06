@@ -35,7 +35,10 @@ const NoteCard = ({ note }: NoteCardPros) => {
               <p className="text-sm leading-6 text-slate-400">{note.content}</p>
             </div>
 
-            <button className="w-full bg-slate-800 py-4 text-center text-sm text-slate-300 outline-none font-medium group">
+            <button
+              type="button"
+              className="w-full bg-slate-800 py-4 text-center text-sm text-slate-300 outline-none font-medium group"
+            >
               Do you want to
               <span className="text-red-400 group-hover:underline">
                 {" "}
