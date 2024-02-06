@@ -1,10 +1,7 @@
 const App = () => {
   return (
     <>
-      <div>
-        <h1>Hello World </h1>
-        <h2> Experts Note App</h2>
-      </div>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
     </>
   );
 };
