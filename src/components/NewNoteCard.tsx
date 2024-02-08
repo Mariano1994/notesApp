@@ -122,7 +122,7 @@ const NewNoteCard = ({ onNoteCreated }: NewNoteCardProps) => {
                       value={content}
                       onChange={handleContentChanged}
                       autoFocus
-                      className="text-sm leading-6 text-slate-400 bg-transparent resize-none flex flex-1 w-full outline-none"
+                      className="text-sm leading-6 text-slate-400 bg-transparent resize-none flex flex-1 w-full h-[100vh] outline-none"
                     />
                   </div>
                 )}
